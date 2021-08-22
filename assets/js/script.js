@@ -77,7 +77,7 @@ handleBT1 = (index) => {
  }
 
 
-  console.log(chanTxt +'\n' + leTxt);
+  // console.log(chanTxt +'\n' + leTxt);
 
   finalTxt = "số các số "+ "<span style = 'background-color: red; color: white; padding: 0 10px'>chẳn</span>" + " là: " + chanTxt + "<br>"
   + "số các số "+ "<span style = 'background-color: blue; color: white; padding: 0 10px'>lẻ</span>" + " là: " + leTxt;
@@ -139,7 +139,7 @@ handleBT3 = (index) => {
     sum += i ;
   }
 
-  console.log('giá trị i', i)
+  // console.log('giá trị i', i)
 
 
   finalTxt = "số nguyên dương nhỏ nhất thõa điều kiện là: " + "<span style = 'background-color: red; color: white; padding: 0 10px'>"+ i +"</span>"
@@ -170,7 +170,7 @@ handleBT4 = (index) => {
  
   var x = parseInt(document.getElementById('numberX').value);
   var n = parseInt(document.getElementById('numberN').value);
-  console.log(x, n)
+  // console.log(x, n)
 
   for(var i=1; i<=n; i++) {
     sum += Math.pow(x,i);
@@ -238,7 +238,7 @@ handleBT6 = (index) => {
 handleBT7 = (index) => {
   var finalTxt = "";
   var number = parseInt(document.getElementById('myNumber').value);
-  console.log(number);
+  // console.log(number);
   var flag = 0;
   
   if(number<2) {
@@ -246,11 +246,11 @@ handleBT7 = (index) => {
 
   } else {
     for(var i =2; i <= number; i++) {
-      console.log(i)
+      // console.log(i)
       for(var j = 2; j <= (Math.sqrt(i)); j++) {
-        console.log(i,j)
+        // console.log(i,j)
         if(i%j === 0) {
-          console.log('chia hết');
+          // console.log('chia hết');
           flag++;
           break;      //chỉ cần chia hết cho 1 trong j thì break khỏi vòng lặp j luôn vì k phải là số nguyên tố r
         } 
@@ -258,15 +258,15 @@ handleBT7 = (index) => {
       }
 
       if(flag !== 0) {
-        console.log(i + ' không phải là số nguyên tố');
+        // console.log(i + ' không phải là số nguyên tố');
 
       } else {  //flag vẫn =0   ===> i lúc này là só nguyên tố
-        console.log(i + ' là số nguyên tố');
+        // console.log(i + ' là số nguyên tố');
 
         finalTxt += i + " ";
       }
       flag = 0;
-      console.log('finalTXT', finalTxt, i)
+      // console.log('finalTXT', finalTxt, i)
     }
 
 
